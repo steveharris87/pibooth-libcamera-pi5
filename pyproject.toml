@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Pibooth plugin for Raspberry Pi 5 using libcamera (rpicam-apps)"
 readme = "README.md"
 authors = [
-  { name = "Your Name", email = "your@email.com" },
+  { name = "Steve Harris", email = "Steveharris875@gmail.com" },
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -18,7 +18,7 @@ classifiers = [
     "Framework :: Pibooth",
 ]
 dependencies = [
-    "pibooth>=3.0.0",
+    "pibooth>=2.0.0",
     "pygame",
     "Pillow",
 ]
