@@ -19,8 +19,6 @@ classifiers = [
 ]
 dependencies = [
     "pibooth>=2.0.0",
-    "pygame",
-    "Pillow",
 ]
 requires-python = ">=3.9"
 
