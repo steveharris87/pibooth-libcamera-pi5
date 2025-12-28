@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pibooth-libcamera-pi5"
+version = "0.1.0"
+description = "Pibooth plugin for Raspberry Pi 5 using libcamera (rpicam-apps)"
+readme = "README.md"
+authors = [
+  { name = "Your Name", email = "your@email.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",  # <--- Added this for you
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Framework :: Pibooth",
+]
+dependencies = [
+    "pibooth>=3.0.0",
+    "pygame",
+    "Pillow",
+]
+requires-python = ">=3.9"
+
+# Registers the plugin automatically
+[project.entry-points.pibooth]
+libcamera_pi5 = "pibooth_libcamera_pi5"
+
+[tool.setuptools.packages.find]
+where = ["src"]
